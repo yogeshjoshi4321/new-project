@@ -1,0 +1,76 @@
+@media (max-width: 768px) {
+    html {
+        font-size: 48%;
+    }
+
+    body {
+        width: 121rem;
+    }
+
+    /* ====================Navigation Bar==================== */
+    .navbar {
+        font-size: 2rem;
+    }
+
+    /* ====================Services==================== */
+    .first-service {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .service-div {
+        width: 46rem;
+        padding: 9px 6rem;
+        font-size: 2rem;
+    }
+
+    .second-service {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .service-div h1 {
+        font-size: 4rem;
+    }
+
+    /* ====================Experience in Agriculture Industry===================== */
+    .experience{
+        display: flex;
+        flex-direction: column;
+        height: 310vh;
+        gap: 0px;
+    }
+    .experience-img{
+        width: fit-content;
+    }
+    .experience-text{
+        padding: 0px 19rem;
+        font-size: 2rem;
+    }
+    .experience-text-color{
+        font-size: 3rem;
+    }
+    .experience div h1{
+        font-size: 4rem;
+    }
+
+    /* ====================Plants Make Life Better==================== */
+    .plant{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .plant-text{
+        font-size: 3rem;
+    }
+    .plant-text h1{
+        font-size: 5rem;
+    }
+    .plant-text h5{
+        font-size: 3rem;
+    }
+    .plant-text button{
+        width: 27rem;
+        padding: 2rem;
+    }
+}

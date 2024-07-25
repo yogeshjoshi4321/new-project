@@ -211,7 +211,7 @@ html{
 .notice{
     width: 50vw;
     position: relative;
-    top: 15rem;
+    top: 25rem;
     left: 28rem;
     color: white;
     z-index: 2;
@@ -228,48 +228,60 @@ html{
 }
 
 /* ====================Services==================== */
-.farmer-services{
+.services {
+    padding: 0px 12rem;
+}
+
+.farmer-services {
     margin-top: 7rem;
 }
-.title{
+
+.title {
     text-align: center;
     font-size: 3rem;
     margin-top: 3rem;
     font-family: cursive;
     color: #116530;
 }
-.title h1{
+
+.title h1 {
     color: black;
     font-size: 3rem;
     font-weight: 500;
 }
+
 .service-div {
     padding: 0rem 2rem 3rem 2rem;
     font-size: 1.5rem;
 }
-.hand-icon{
+
+.hand-icon {
     width: 9vw;
     padding-bottom: 0rem;
     position: relative;
     bottom: 2.5rem;
 }
-.service-icon-img{
+
+.service-icon-img {
     width: 6vw !important;
     padding-bottom: 3.5rem;
 }
-.number p{
+
+.number p {
     position: relative;
     left: 4rem;
     top: 2rem;
 }
-.service-div h1{
+
+.service-div h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ====================Experience in Agriculture Industry===================== */
-.experience{
+.experience {
     background-color: #116530;
     color: white;
+    height: 145h;
     display: flex;
     justify-content: center;
     margin-top: 15rem;
@@ -277,33 +289,33 @@ html{
     font-family: Arial, sans-serif;
 }
 
-.experience-img{
+.experience-img {
     position: relative;
     bottom: 6rem;
     left: 8rem;
 }
-.experience-text{
+
+.experience-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 5rem;
     padding-right: 19rem;
 }
-@media screen and (max-width:325px) {
-    
-}
-.experience-text-color{
+
+.experience-text-color {
     color: #81ad91;
 }
 
 /* ====================Plants Make Life Better==================== */
-.plant{
+.plant {
     display: flex;
     margin-top: 15rem;
     padding: 0px 1rem;
     text-align: justify;
 }
-.plant-text{
+
+.plant-text {
     font-family: cursive;
     padding: 0px 8rem;
     display: flex;
@@ -312,21 +324,88 @@ html{
     font-size: 2rem;
     padding-top: 6rem;
 }
-.plant-text h1{
+
+.plant-text h1 {
     font-size: 4rem;
     color: #116530;
 }
-.plant-text h5{
+
+.plant-text h5 {
     font-size: 2rem;
 }
+
 .plant ul {
     list-style-type: disclosure-closed;
 }
-.plant button{
+
+.plant button {
     width: 20rem;
     padding: 2rem;
     border: none;
     background-color: #116530;
     color: white;
     border-radius: 2rem
+}
+
+/* =====================Testimonials==================== */
+.testimonials-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12rem;
+}
+
+.testimonials-heading h1 {
+    font-size: 4rem;
+}
+
+.people-testimonials {
+    padding: 5rem 8rem;
+    gap: 2rem;
+}
+
+.img-wtd {
+    width: 8rem;
+}
+
+.testimonials-font h5 {
+    font-size: 2rem;
+}
+
+.testimonials-font p {
+    font-size: 2rem;
+    color: #276530;
+    text-transform: uppercase;
+}
+
+/* ====================Cards==================== */
+.zoom-card:hover{
+    transition: all 2s;
+    transform: scale(1.1,1.1);
+}
+.cards-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cards-heading h1{
+    font-size: 3rem;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+.card{
+    width: 37rem;
+    font-size: 2rem;
+    overflow: hidden;
+}
+.card-title{
+    font-size: 3rem;
+}
+.btn{
+    font-size: 2rem;
 }
