@@ -1,3 +1,20 @@
+/* ========================= keyframes ========================== */
+@keyframes text-in{
+    0%{
+        display: none;
+        transform: translateY(-10rem) scale(0,0);
+    }
+    50%{
+        transform: translateY(-5rem) scale(1,1);
+    }
+    100%{
+        display: block;
+        transform: translateY(0rem) scale(1.5,1.5);
+    }
+}
+
+
+/* ========================= keyframes ========================== */
 html{
     font-size: 62.5%;
 }
@@ -11,7 +28,15 @@ html{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+  
 }
+*{
+    font-family: "Marcellus SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+  }
+  
 
 /* ====================Navigation Bar==================== */
 .navigation{
@@ -37,6 +62,7 @@ html{
     margin: 0 15px;
 }
 
+
 /* ====================Carousel==================== */
 .carousel-item{
     width: 198vw;
@@ -44,11 +70,104 @@ html{
     box-sizing: border-box;
     z-index: -1;
 }
+/* @media screen and (max-width:768px) {
+    .carousel-item{
+        width: 120%;
+        background: fill;
+        position: relative;
+        top: -10rem;
+        left: 0rem;
+    }
+} */
+
+.animation{
+    animation: text-in 3s ease-in 0s;
+}
+
+@media screen and (max-width:1025px){
+    .mediaq{
+        text-align: center;
+        margin-top: -150px;
+        }
+        .heading-mediaq{
+            font-size: 200%;
+        }
+        .text-p{
+            font-size: 100%;
+        }
+}
+
+@media screen and (max-width:720px){
+    .mediaq{
+        margin-left: -80px;    
+        text-align: center;
+        margin-top: -150px;
+        }
+        .heading-mediaq{
+            font-size: 200%;
+        }
+        .text-p{
+            font-size: 100%;
+        }
+}
+
+@media screen and (max-width:428px){
+    .mediaq{
+        margin-left: -200px;    
+        width: 200%;
+        text-align: center;
+        margin-top: -150px;
+        }
+    .heading-mediaq{
+        display: block;
+    }
+    .text-p{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:380px){
+    .mediaq{
+    margin-left: -200px;    
+    width: 200%;
+    text-align: center;
+    margin-top: -150px;
+    }
+    .heading-mediaq{
+        display: block;
+    }
+    .text-p{
+        display: none;
+    }
+}
+
+@media screen and (max-width:330px){
+    .mediaq{
+        margin-left: -290px;
+    }
+    .text-p{
+        display: none;
+    }
+    .heading-mediaq{
+        display: block;
+        font-size: 5px;
+        width: 200%;
+        margin-top: -150px;
+    }
+    /* .heading-mediaq:hover + .text-p{
+        display: block;
+        background-color: aliceblue;
+        color: red;
+    } */
+}
+
 .carousel-item1{
     position: relative;
     background-image: url(https://thumbs.dreamstime.com/b/agriculture-vegetable-field-landscape-view-freshly-growing-84090367.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: fixed;
     z-index: -1;
 }
 .carousel-item1::before{
@@ -64,6 +183,7 @@ html{
     background-image: url(https://static.vecteezy.com/system/resources/thumbnails/041/879/591/small_2x/ai-generated-farmer-inspecting-organic-lettuce-crop-at-sunset-hands-of-agricultural-worker-examining-fresh-leafy-vegetables-concept-of-sustainable-farming-harvest-season-and-healthy-nutrition-photo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: fixed;
     z-index: -1;
 }
 .carousel-item2::before{
@@ -78,6 +198,7 @@ html{
     background-image: url(https://www.deere.com/assets/images/region-4/products/combines/t680/r4x002420_rrd-1365x768.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: fixed;
     z-index: -1;
 }
 .carousel-item3::before{
@@ -88,18 +209,124 @@ html{
     background-color: rgba(0 , 0 , 0, 0.55);
 }
 .notice{
-    width: 40%;
+    width: 50vw;
     position: relative;
-    top: 24rem;
-    left: 39rem;
+    top: 15rem;
+    left: 28rem;
     color: white;
-    z-index: 1;
+    z-index: 2;
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: center;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.7;
 }
 .notice h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* ====================Services==================== */
+.farmer-services{
+    margin-top: 7rem;
+}
+.title{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+    font-family: cursive;
+    color: #116530;
+}
+.title h1{
+    color: black;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.service-div {
+    padding: 0rem 2rem 3rem 2rem;
+    font-size: 1.5rem;
+}
+.hand-icon{
+    width: 9vw;
+    padding-bottom: 0rem;
+    position: relative;
+    bottom: 2.5rem;
+}
+.service-icon-img{
+    width: 6vw !important;
+    padding-bottom: 3.5rem;
+}
+.number p{
+    position: relative;
+    left: 4rem;
+    top: 2rem;
+}
+.service-div h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ====================Experience in Agriculture Industry===================== */
+.experience{
+    background-color: #116530;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+    gap: 13rem;
+    font-family: Arial, sans-serif;
+}
+
+.experience-img{
+    position: relative;
+    bottom: 6rem;
+    left: 8rem;
+}
+.experience-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    padding-right: 19rem;
+}
+@media screen and (max-width:325px) {
+    
+}
+.experience-text-color{
+    color: #81ad91;
+}
+
+/* ====================Plants Make Life Better==================== */
+.plant{
+    display: flex;
+    margin-top: 15rem;
+    padding: 0px 1rem;
+    text-align: justify;
+}
+.plant-text{
+    font-family: cursive;
+    padding: 0px 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 2rem;
+    padding-top: 6rem;
+}
+.plant-text h1{
     font-size: 4rem;
-    text-align: start;
+    color: #116530;
+}
+.plant-text h5{
+    font-size: 2rem;
+}
+.plant ul {
+    list-style-type: disclosure-closed;
+}
+.plant button{
+    width: 20rem;
+    padding: 2rem;
+    border: none;
+    background-color: #116530;
+    color: white;
+    border-radius: 2rem
 }
